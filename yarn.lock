@@ -164,6 +164,13 @@
   "resolved" "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz"
   "version" "15.7.5"
 
+"@types/react-anchor-link-smooth-scroll@^1.0.2":
+  "integrity" "sha512-ZemNS6WzQN8KA4w0sy5N86qJ55Ft7OnIDGH6QIHe0LL27xkZpNINMNZGR0DacIVPU66+JrbDqi1cKms9qhcPNQ=="
+  "resolved" "https://registry.npmjs.org/@types/react-anchor-link-smooth-scroll/-/react-anchor-link-smooth-scroll-1.0.2.tgz"
+  "version" "1.0.2"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-dom@^18.0.11":
   "integrity" "sha512-2et4PDvg6PVCyS7fuTc4gPoksV58bW0RwSxWKcPRcHZf0PRUGq03TKcD/rUHe3azfV6/5/biUBJw+HhCQjaP0A=="
   "resolved" "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.2.6.tgz"
