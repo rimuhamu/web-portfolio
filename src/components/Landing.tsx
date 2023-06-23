@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import SocialMediaIcons from "./SocialMediaIcons";
 
-type LandingProps = {
+interface LandingProps {
   setSelectedPage: Dispatch<SetStateAction<string>>;
-};
+}
 
 const Landing: FC<LandingProps> = ({ setSelectedPage }) => {
   const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
@@ -16,20 +16,20 @@ const Landing: FC<LandingProps> = ({ setSelectedPage }) => {
       className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10"
     >
       {/* IMAGE SECTION */}
-      <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
+      <div className="mb-16 md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
         {isAboveMediumScreen ? (
-          <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1]">
+          <div className="relative z-0 ml-40 before:absolute before:rounded-full before:-left-5 before:-top-5 before:w-[110%] before:h-[110%] before:border-2 before:border-blue before:z-[-1]">
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px ]"
-              src="../assets/profile-image.png"
+              className="brightness-75 hover:filter hover:brightness-90 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px ]"
+              src="assets/my-image.png"
             />
           </div>
         ) : (
           <img
             alt="profile"
             className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px ]"
-            src="assets/profile-image.png"
+            src="assets/my-image.png"
           />
         )}
       </div>
@@ -54,7 +54,7 @@ const Landing: FC<LandingProps> = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Aperture is producing video essay style content on YouTube for an
+            Emir is producing video essay style content on YouTube for an
             audience of over 1,400,000 subscribers. Video topics include
             science, technology, psychology, sociology, and everything else the
             Universe has to offer.
